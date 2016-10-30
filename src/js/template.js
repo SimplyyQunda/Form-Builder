@@ -16,14 +16,20 @@ for (var count = 0; count < data.length; count++) {
 // var home =
 
 
-var Groovybox = 
+var Groovybox = `
+<div class = "entire-grid"> 
 
+
+
+</div>
+
+`
 
 $(".container").append(Groovybox);
-
 	
 
 }
+
 
 };
 
