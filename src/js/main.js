@@ -1,3 +1,22 @@
+import $ from "jquery";
+import {buildblock} from "./formbuilder.js";
+import {formInfo} from "./template.js";
+
 function builderform (event) {
-  var buildblock = $.ajax({
-    url: `http://json-data.herokuapp.com/forms${Id}`
+
+
+}
+
+
+buildblock.then(formInfo);
+
+
+
+
+
+
+
+
+
+
+
