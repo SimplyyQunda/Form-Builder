@@ -13,7 +13,8 @@ var groovyBox;
 
 
 				if (form.type == "select"){
-					groovyBox = `<select placeholder="Set Languag"> 
+					groovyBox = `<select placeholder="Set Language"> 
+					
 						<option "${form.options}" value ="English">English</option>
 
 					</select>`;
@@ -21,7 +22,7 @@ var groovyBox;
 				} else if (form.type == "textarea") {
 					groovyBox = ` <div class="formBlock">
 
-					<i class=" fa ${form.icon}"> </i>
+					<i class=" fa ${form.icon}" id="commentSec"> </i>
 					<textarea  id="${form.id}" placeholder="${form.label}"> </textarea>
 
 					
