@@ -1,42 +1,53 @@
  import $ from "jquery";
+ import {buildblock} from "./formbuilder.js"
 
 
 function formInfo (data) {
 
 for (var count = 0; count < data.length; count++) {
 	var form = data[count];
+	console.log(form);
 	// console.log(form)
-// var firstName =
-// var lastName =
-// var Email =
-// var websiteUrl =
-// var setLang =
-// var comment =
-// var mobile =
-// var home =
+
+var groovyBox;
 
 
-var Groovybox = `
-<div class = "entire-grid"> 
+				if (form.type == "select"){
+					groovyBox = `<select placeholder="Set Languag"> 
+						<option "${form.options}" value ="English">English</option>
+
+					</select>`;
+
+				} else if (form.type == "textarea") {
+					groovyBox = ` <div class="formBlock">
+
+					<i class=" fa ${form.icon}"> </i>
+					<textarea  id="${form.id}" placeholder="${form.label}"> </textarea>
+
+					
+					
+				</div>
+				`;
+
+				} else {
+					groovyBox = `
+				
+				<div class="formBlock">
+				<i class=" fa ${form.icon}"> </i>
+				<input class="formbars" id="${form.id}" type="${form.type}" placeholder="${form.label}">
+
+					
+					
+				</div>
+
+					
+				`;
+				}
 
 
-
-</div>
-
-`
-
-$(".container").append(Groovybox);
-	
+$(".container").append(groovyBox);
 
 }
-
-
 };
 
-
-
-
-
-
-
-export {formInfo}
+export {formInfo};

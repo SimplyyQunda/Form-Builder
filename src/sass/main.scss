@@ -1,3 +1,85 @@
+
+
 .header{
-	border: 2px solid blue;
+	border: 2px solid grey;
+    width: 535px;
+    height: 75px;
+    background-color: pink;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Prociono', serif;
+}
+
+.formBox{
+	border: 2px solid grey;
+	height: 554px;
+    width: 535px;
+}
+
+.container{
+	text-align: center;
+}
+
+input{
+	width: 480px;
+    height: 35px;
+}
+
+.submit{
+	background-color:pink;
+	height: 91px;
+    margin-top: 44px;
+}
+
+select{
+	width: 486px;
+    height: 35px;
+    margin-left: -19px;
+    background-repeat:no-repeat;
+	background-position:6px;
+	border:1px solid #DADADA;
+	margin-top:10px;
+	padding-left:35px;
+	width:310px;
+	height:30px;
+	font-size:14px;
+	box-shadow:0 0 10px;
+}
+
+input.formbars{
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+padding-left:35px;
+width:310px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+}
+
+button{
+background-repeat: no-repeat;
+background-position: 6px;
+border: 1px solid #DADADA;
+margin-top: 29px;
+padding-left: 6px;
+width: 98px;
+height: 35px;
+font-size: 14px;
+box-shadow: 0 0 10px;
+}
+
+textarea{
+background-repeat: no-repeat;
+background-position: 6px;
+border: 1px solid #DADADA;
+margin-top: 10px;
+padding-left: 6px;
+width: 334px;
+height: 99px;
+font-size: 14px;
+box-shadow: 0 0 10px;
 }
