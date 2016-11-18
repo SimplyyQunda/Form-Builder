@@ -24,6 +24,7 @@
 }
 
 .formBlock{
+	position: relative;
 	text-align: left;
 	margin-left: 40px;
 	width: 80%;
@@ -31,8 +32,11 @@
 	padding-left: 10px;
 	margin-top:10px;
 	box-shadow:0 0 10px;
-
-font-size:14px;
+	font-size:14px;
+	#commentSec {
+		position: absolute;
+   		top: 10px;
+	}
 }
 
 input{
@@ -44,8 +48,8 @@ input{
 
 .submit{
 	background-color:pink;
-	height: 91px;
-    margin-top: 44px;
+	height: 50px;
+    margin-top: 32px;
 }
 
 select{
@@ -78,10 +82,10 @@ button{
 background-repeat: no-repeat;
 background-position: 6px;
 border: 1px solid #DADADA;
-margin-top: 29px;
+margin-top: 13px;
 padding-left: 6px;
-width: 98px;
-height: 35px;
+width: 88px;
+height: 27px;
 font-size: 14px;
 box-shadow: 0 0 10px;
 }
@@ -91,6 +95,7 @@ textarea{
     height: 111px;
     border: none;
     margin-top: 6px;
+    padding-left: 20px;
 
 }
 

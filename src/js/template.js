@@ -11,14 +11,15 @@ for (var count = 0; count < data.length; count++) {
 
 var groovyBox;
 
+				
+
+
 
 				if (form.type == "select"){
-					groovyBox = `<select placeholder="Set Language"> 
-					
-						<option "${form.options}" value ="English">English</option>
-
-					</select>`;
-
+					groovyBox = $('<select placeholder="Set Language"><option> Set Language </option></select>');
+					form.options.forEach(function(option){
+						groovyBox.append(`<option value="${option.value}"> ${option.label} </option>`)
+					})
 				} else if (form.type == "textarea") {
 					groovyBox = ` <div class="formBlock">
 
